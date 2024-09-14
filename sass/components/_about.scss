@@ -1,8 +1,8 @@
 .about {
-  @media  screen and (min-width: $mobile-adapt) {
+  // @media  screen and (min-width: $mobile-adapt) {
     display: none;
     // width: 1600px;
-  }
+  // }
   @media screen and (min-width: $desktop-adapt) {
     display: block;
   }

@@ -1,7 +1,23 @@
 .clients {
+    width: 100%;
+
+        // width: 480px;
+        margin-bottom: 60px;
+        
+
+    @media screen and (min-width: $tablet-adapt) {
+        // width: 768px;
+    }
+    @media screen and (min-width: $desktop-adapt) {
+        // width: 1200px;
+            margin-bottom: 94px;
+        
+    }
+//   width: 1200px;
+}
+.clients-container {
     @media screen and (min-width: $mobile-adapt) {
         width: 480px;
-        margin-bottom: 60px;
         
     }
     @media screen and (min-width: $tablet-adapt) {
@@ -9,20 +25,21 @@
     }
     @media screen and (min-width: $desktop-adapt) {
         width: 1200px;
-            margin-bottom: 94px;
         
     }
-//   width: 1200px;
 }
 .clients__item {
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
-  @media screen and (min-width: $mobile-adapt) {
-    flex-basis: 210px;
-    // flex-basis: calc((100% - 2 * 30px) / 3);
-    // width: 210px;
-    height: 92px;
-  }
+  flex-basis: calc((100% - 30px)/2);
+
+  height: 92px;
+//   @media screen and (min-width: $mobile-adapt) {
+
+//     // flex-basis: calc((100% - 2 * 30px) / 3);
+//     // width: 210px;
+//     // height: 92px;
+//   }
   @media screen and (min-width: $tablet-adapt) {
     flex-basis: calc((100% - 2 * 30px) / 3) ;
   }
@@ -59,30 +76,19 @@
 .clients__list {
   gap: 30px;
   display: flex;
-
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
-  @media screen and (min-width: $mobile-adapt) {
-    flex-wrap: wrap;
-    width: 450px;
-  margin-top: 0px;      
-
-}
-@media screen and (min-width: $tablet-adapt) {
-    width: 738px;
-}
-@media screen and (min-width: $desktop-adapt) {
-    width: 1200px;
-}
 }
 
 
 
 .clients__heading {
     @extend %heading;
-    @media screen and (min-width: $mobile-adapt) {
+
 
   font-size: 28px;
-  margin-bottom: 30px;}
+  margin-bottom: 30px;
   @media screen and (min-width: $desktop-adapt) {
     font-size: 36px;
     margin-bottom: 50px;
@@ -91,28 +97,30 @@
 
 
 .clients__logo {
-  &--yaco {
-    width: 41px;
-    height: 46px;
-  }
-  &--flag {
-    width: 40px;
-    height: 52px;
-  }
+//   &--yaco {
+//     width: 41px;
+//     height: 46px;
+//   }
+//   &--flag {
+//     width: 40px;
+//     height: 52px;
+//   }
   &--company {
-    width: 43px;
-    height: 41px;
+    width: 106px;
+    height: 60px;
   }
-  &--foster {
-    width: 84px;
-    height: 40px;
-  }
-  &--brand {
-    width: 62px;
-    height: 45px;
-  }
-  &--tagline {
-    width: 93px;
-    height: 43px;
-  }
+//   &--foster {
+//     width: 84px;
+//     height: 40px;
+//   }
+//   &--brand {
+//     width: 62px;
+//     height: 45px;
+//   }
+//   &--tagline {
+//     width: 93px;
+//     height: 43px;
+//   }
+width: 106px;
+height: 60px;
 }

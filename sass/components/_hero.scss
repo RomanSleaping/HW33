@@ -1,18 +1,14 @@
 .hero {
 
- @media screen and  (min-width: $mobile-adapt) {
-  width: 480px;
+
+  width: 100%;
   height: 400px;
   margin: 0 auto;
   margin-bottom: 60px;
   
-}
-@media screen and  (min-width: $tablet-adapt) {
-  width: 768px;
 
-}
+
 @media screen and  (min-width: $desktop-adapt)  {
-  width: 100%;
   height: 600px;
     margin-bottom: 94px;
 }
@@ -40,13 +36,13 @@ background-color: $hero_footer-background;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  @media screen and  (min-width: $mobile-adapt) {
+  // @media screen and  (min-width: $mobile-adapt) {
       line-height: calc(42 / 26);
   font-size: 26px;
 
   margin-bottom: 30px;
     
-  } 
+  // } 
   @media screen and  (min-width: $desktop-adapt) {
     font-size: 44px;
   } 
