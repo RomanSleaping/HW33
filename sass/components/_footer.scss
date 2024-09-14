@@ -10,7 +10,8 @@
 //     width: 768px;
 //   }
   @media screen and (min-width: $desktop-adapt) {
-
+    display: flex;
+    align-items: center;
     height: 252px;
 
 
